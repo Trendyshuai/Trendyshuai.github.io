@@ -1,9 +1,21 @@
 .welcome {
     color: rgb(39, 126, 97);
+    font-size: 2rem;
 }
 
 .start {
     padding: 10px;
+}
+
+.blockquote-footer {
+    margin-top: 0;
+}
+
+
+.blockquote-footer::before {
+    content: url(../imgs/location.png);
+    bottom: 0;
+    vertical-align: middle;
 }
 
 
