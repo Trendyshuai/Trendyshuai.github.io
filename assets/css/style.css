@@ -13,9 +13,9 @@
 
 
 .blockquote-footer::before {
-    content: url(../imgs/location.png);
-    bottom: 0;
-    vertical-align: middle;
+    content: url(../imgs/location.svg);
+    zoom: 2.65%;
+    vertical-align: text-bottom;
 }
 
 
@@ -41,15 +41,15 @@ body {
 }
 
 /* Since positioning the image, we need to help out the caption */
-.carousel-caption {
+/* .carousel-caption {
     bottom: 3rem;
     z-index: 10;
-}
+} */
 
 /* Declare heights because of positioning of img element */
 .carousel-item {
     /* height: 32rem; */
-    margin-top: 5px;
+    margin-top: 8px;
 }
 
 /* RESPONSIVE CSS
@@ -138,10 +138,10 @@ body {
     --bs-btn-active-border-color: #5a23c8;
 }
 
-.bd-mode-toggle {
+/* .bd-mode-toggle {
     z-index: 1500;
 }
 
 .bd-mode-toggle .dropdown-menu .active .bi {
     display: block !important;
-}
+} */
