@@ -3,14 +3,17 @@
     font-size: 2rem;
 }
 
-.start {
-    padding: 10px;
+.card {
+    margin-top: 20px;
 }
 
 .blockquote-footer {
     margin-top: 0;
 }
 
+footer {
+    margin-top: 20px;
+}
 
 .blockquote-footer::before {
     content: url(../imgs/location.svg);
