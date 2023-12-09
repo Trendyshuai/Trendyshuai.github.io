@@ -3,13 +3,19 @@
         "date": "1996-04-07",
         "subject": "我来到这个世界",
         "location": "盘锦",
-        "description": "我先来到了这个世界，为了来遇见你。"
+        "description": "我先来到这个世界，为了来与你相遇。"
+    },
+    {
+        "date": "2000-08-21",
+        "subject": "你来到这个世界",
+        "location": "郑州",
+        "description": "欢迎你来到这个世界，宝贝。"
     },
     {
         "date": "2021-10-31",
         "subject": "初识",
         "location": "微博",
-        "description": "相遇在网络，因为一道数学题，相遇在微博。"
+        "description": "相识在网络，因为一道数学题，相识在微博。"
     },
     {
         "date": "2022-05-03",
