@@ -138,7 +138,7 @@
         <!-- FOOTER -->
         <footer class="container">
             <p class="float-end"><a href="#"> <img src="./assets/imgs/up.svg" alt="up" width="48px"> </a></p>
-            <p>&copy; 2021–2023 Immutable love. &middot; <a href="https://weibo.com/trendyshuai"
+            <p>&copy; <u id="yearScope">2021–2023</u> Immutable love. &middot; <a href="https://weibo.com/trendyshuai"
                     style="color: lightblue;">譬嘶</a> &middot; <a href="https://weibo.com/u/6868014142"
                     style="color: pink;">啦雾</a></p>
         </footer>
@@ -183,6 +183,11 @@
                 cover: './assets/media/Love Story.jpg',
                 lrc: './assets/media/Love Story.lrc'
             }]
+        });
+
+        $("document").ready(function(){
+            Date year = new Date();
+            $("#yearScope").text("2021-" + year.getFullYear());
         });
 
         $.ajax({
