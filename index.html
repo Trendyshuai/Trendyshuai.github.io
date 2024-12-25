@@ -185,9 +185,9 @@
             }]
         });
 
-        $("document").ready(function(){
-            var year = new Date();
-            $("#yearScope").text("2021-" + year.getFullYear());
+        $("document").ready(function () {
+            var date = new Date();
+            $("#yearScope").text("2021-" + date.getFullYear());
         });
 
         $.ajax({
@@ -210,6 +210,18 @@
                                 </div>\
                             </div>'
                 });
+                html += '<div class="col-sm-3 mb-3 mb-sm-0">\
+                                <div class="card">\
+                                    <div class="card-header">\
+                                        '+ getTomorrowDate() + '&emsp;|&emsp;结束异地</div>\
+                                    <div class="card-body">\
+                                        <blockquote class="blockquote mb-0">\
+                                            <p>我们终于结束异地了。</p>\
+                                            <footer class="blockquote-footer">任何地方</footer>\
+                                        </blockquote>\
+                                    </div>\
+                                </div>\
+                            </div>';
                 $(".start").html("");
                 $(".start").append(html);
             },
@@ -220,6 +232,17 @@
                 console.log(textStatus);
             },
         });
+
+        function getTomorrowDate() {
+            const today = new Date();
+            today.setDate(today.getDate() + 1); // 获取明天的日期
+
+            const year = today.getFullYear();
+            const month = String(today.getMonth() + 1).padStart(2, '0'); // 月份从0开始，需要加1，并补零
+            const day = String(today.getDate()).padStart(2, '0'); // 日期补零
+
+            return `${year}-${month}-${day}`;
+        }
     </script>
 </body>
 
