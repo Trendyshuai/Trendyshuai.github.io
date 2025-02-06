@@ -124,5 +124,11 @@
         "subject": "幸福时刻",
         "location": "杭州",
         "description": "幸福，嘿嘿嘿。"
+    },
+    {
+        "date": "2025-01-18",
+        "subject": "第一次音乐现成",
+        "location": "杭州",
+        "description": "我们的第一次音乐现场，摇起来。"
     }
 ]
