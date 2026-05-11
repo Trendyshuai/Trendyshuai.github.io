@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <title>💕 我们的故事</title> -->
+    <title>譬嘶 & 啦雾</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng&family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <!-- APlayer CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aplayer/1.10.1/APlayer.min.css">
+    <!-- 心形图标 -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💕</text></svg>">
+</head>
+<body>
+    <!-- 背景装饰 -->
+    <div class="bg-decoration">
+        <div class="heart heart-1">💕</div>
+        <div class="heart heart-2">💗</div>
+        <div class="heart heart-3">💖</div>
+        <div class="heart heart-4">💝</div>
+        <div class="heart heart-5">💕</div>
+    </div>
+
+    <!-- 主容器 -->
+    <div class="container">
+        <!-- 头部 -->
+        <header class="header">
+            <h1 class="title">
+                <span class="title-icon">💕</span>
+                我们的故事
+                <span class="title-icon">💕</span>
+            </h1>
+            <p class="subtitle">记录每一个美好的瞬间</p>
+        </header>
+
+        <!-- Tab导航 -->
+        <nav class="tab-nav">
+            <button class="tab-btn active" data-tab="photos">
+                <span class="tab-icon">📸</span>
+                <span class="tab-text">美好瞬间</span>
+            </button>
+            <button class="tab-btn" data-tab="anniversaries">
+                <span class="tab-icon">🎉</span>
+                <span class="tab-text">纪念日</span>
+            </button>
+            <button class="tab-btn" data-tab="articles">
+                <span class="tab-icon">💌</span>
+                <span class="tab-text">情书</span>
+            </button>
+        </nav>
+
+        <!-- 内容区域 -->
+        <main class="content">
+            <!-- 照片Tab -->
+            <section id="photos" class="tab-content active">
+                <div class="section-header">
+                    <h2>📸 美好瞬间</h2>
+                    <p>每一张照片，都是一段珍贵的回忆</p>
+                </div>
+                
+                <!-- 轮播容器 -->
+                <div class="carousel-container">
+                    <div class="carousel">
+                        <div class="carousel-track" id="carouselTrack">
+                            <!-- 轮播项由JS动态生成 -->
+                        </div>
+                    </div>
+                    
+                    <!-- 轮播控制 -->
+                    <button class="carousel-btn prev" id="prevBtn">
+                        <span>❮</span>
+                    </button>
+                    <button class="carousel-btn next" id="nextBtn">
+                        <span>❯</span>
+                    </button>
+                    
+                    <!-- 轮播指示器 -->
+                    <div class="carousel-indicators" id="carouselIndicators"></div>
+                </div>
+
+                <!-- 照片卡片网格 -->
+                <div class="photo-grid" id="photoGrid">
+                    <!-- 照片卡片由JS动态生成 -->
+                </div>
+            </section>
+
+            <!-- 纪念日Tab -->
+            <section id="anniversaries" class="tab-content">
+                <div class="section-header">
+                    <h2>🎉 纪念日</h2>
+                    <p>每一个特殊的日子，都值得被铭记</p>
+                </div>
+                
+                <div class="anniversary-timeline" id="anniversaryTimeline">
+                    <!-- 纪念日卡片由JS动态生成 -->
+                </div>
+            </section>
+
+            <!-- 文章Tab -->
+            <section id="articles" class="tab-content">
+                <div class="section-header">
+                    <h2>💌 情书</h2>
+                    <p>文字承载着最真挚的情感</p>
+                </div>
+                
+                <div class="articles-container" id="articlesContainer">
+                    <!-- 文章卡片由JS动态生成 -->
+                </div>
+            </section>
+        </main>
+
+        <!-- 页脚 -->
+        <footer class="footer">
+            <p>💕 用心记录，用爱珍藏 💕</p>
+            <!-- <p class="footer-date"></p> -->
+            <p>&copy; <u class="footer-date"></u> Immutable love. &middot; <a href="https://weibo.com/trendyshuai"
+                    style="color: lightblue;">譬嘶</a> &middot; <a href="https://weibo.com/u/6868014142"
+                    style="color: pink;">啦雾</a></p>
+        </footer>
+
+    </div>
+
+    <!-- 文章详情弹窗 -->
+    <div class="modal" id="articleModal">
+        <div class="modal-content">
+            <button class="modal-close" id="modalClose">×</button>
+            <div class="modal-body" id="modalBody">
+                <!-- 文章内容由JS动态生成 -->
+            </div>
+        </div>
+    </div>
+
+    <!-- 回到顶部 -->
+    <a href="#" class="back-to-top" title="回到顶部">↑</a>
+
+    <!-- APlayer 容器 -->
+    <div id="aplayer"></div>
+
+    <!-- APlayer 库（必须在 main.js 之前加载） -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aplayer/1.10.1/APlayer.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

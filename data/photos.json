@@ -1,0 +1,39 @@
+{
+  "photos": [
+    {
+      "id": 1,
+      "src": "assets/images/photo1.jpg",
+      "title": "我们的第一次约会",
+      "description": "那天的阳光正好，你的笑容更甜",
+      "date": "2023-02-14"
+    },
+    {
+      "id": 2,
+      "src": "assets/images/photo2.jpg",
+      "title": "海边漫步",
+      "description": "海风轻拂，手牵着手，时光静好",
+      "date": "2023-05-20"
+    },
+    {
+      "id": 3,
+      "src": "assets/images/photo3.jpg",
+      "title": "生日惊喜",
+      "description": "为你准备的惊喜，看到你开心的样子，一切都值得",
+      "date": "2023-08-15"
+    },
+    {
+      "id": 4,
+      "src": "assets/images/photo4.jpg",
+      "title": "冬日暖阳",
+      "description": "冬天最温暖的事，就是和你一起晒太阳",
+      "date": "2023-12-25"
+    },
+    {
+      "id": 5,
+      "src": "assets/images/photo5.jpg",
+      "title": "新年愿望",
+      "description": "新的一年，希望能一直陪在你身边",
+      "date": "2024-01-01"
+    }
+  ]
+}
