@@ -422,11 +422,11 @@ body {
 }
 
 .anniversary-card:nth-child(odd) {
-    margin-left: 5%;
+    margin-left: 4.5%;
 }
 
 .anniversary-card:nth-child(even) {
-    margin-left: 50%;
+    margin-left: 50.5%;
 }
 
 .anniversary-card:hover {
@@ -590,7 +590,7 @@ body {
 
 .modal-content {
     background: var(--card-bg);
-    border-radius: 25px;
+    border-radius: 25px 0px 0px 25px;
     max-width: 700px;
     width: 100%;
     max-height: 85vh;
@@ -669,7 +669,7 @@ body {
 /* ==================== 页脚 ==================== */
 .footer {
     text-align: center;
-    padding: 40px 20px;
+    padding: 40px 20px 100px 20px;
     margin-top: 60px;
     border-top: 1px solid var(--primary-light);
 }
@@ -821,7 +821,7 @@ body {
 .back-to-top {
     position: fixed;
     bottom: 100px;
-    right: 100px;
+    right: 40px;
     width: 45px;
     height: 45px;
     display: flex;
@@ -842,77 +842,3 @@ body {
     box-shadow: var(--shadow-hover);
 }
 
-/* ==================== APlayer 样式适配 ==================== */
-#aplayer {
-    z-index: 9999;
-}
-
-/* 调整 APlayer 迷你模式样式以匹配主题 */
-.aplayer.aplayer-fixed {
-    border-radius: 15px 15px 0 0 !important;
-    box-shadow: 0 -4px 20px rgba(255, 107, 157, 0.2) !important;
-}
-
-.aplayer.aplayer-fixed .aplayer-body {
-    background: rgba(255, 255, 255, 0.95) !important;
-    backdrop-filter: blur(10px);
-}
-
-.aplayer .aplayer-info .aplayer-music .aplayer-title {
-    color: var(--primary-color) !important;
-    font-weight: 600;
-}
-
-.aplayer .aplayer-info .aplayer-music .aplayer-author {
-    color: var(--text-light) !important;
-}
-
-.aplayer .aplayer-lrc p {
-    color: var(--text-light) !important;
-}
-
-.aplayer .aplayer-lrc p.aplayer-lrc-current {
-    color: var(--primary-color) !important;
-    font-weight: 600;
-}
-
-.aplayer .aplayer-controller .aplayer-bar-wrap .aplayer-bar .aplayer-played {
-    background: var(--primary-color) !important;
-}
-
-.aplayer .aplayer-controller .aplayer-bar-wrap .aplayer-bar .aplayer-thumb {
-    background: var(--primary-color) !important;
-}
-
-.aplayer .aplayer-controller .aplayer-time .aplayer-icon path {
-    fill: var(--primary-color) !important;
-}
-
-.aplayer .aplayer-list {
-    background: rgba(255, 255, 255, 0.98) !important;
-    border-radius: 0 0 15px 15px;
-}
-
-.aplayer .aplayer-list::-webkit-scrollbar-thumb {
-    background: var(--primary-light);
-}
-
-.aplayer .aplayer-list::-webkit-scrollbar-thumb:hover {
-    background: var(--primary-color);
-}
-
-.aplayer .aplayer-list li.aplayer-list-light {
-    background: var(--gradient-soft) !important;
-}
-
-.aplayer .aplayer-list li.aplayer-list-light .aplayer-list-index {
-    color: var(--primary-color);
-}
-
-.aplayer .aplayer-list li.aplayer-list-light .aplayer-list-title {
-    color: var(--primary-color);
-}
-
-.aplayer .aplayer-list li:hover {
-    background: var(--gradient-soft) !important;
-}
