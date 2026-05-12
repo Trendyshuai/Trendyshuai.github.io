@@ -9,17 +9,17 @@
     },
     {
       "id": 2,
+      "src": "assets/images/photo8.jpg",
+      "title": "我们一起经历的大雪",
+      "description": "我们一起经历的沈阳大雪，虽然寒冷，但有你在身边，一切都变得温暖了",
+      "date": "2024-01-30"
+    },
+    {
+      "id": 3,
       "src": "assets/images/photo7.jpg",
       "title": "漫步星海湾的夜晚",
       "description": "海风轻拂，我们在星海湾的夜晚漫步，感受着彼此的温暖和这座城市的浪漫",
       "date": "2024-08-29"
-    },
-    {
-      "id": 3,
-      "src": "assets/images/photo3.jpg",
-      "title": "生日惊喜",
-      "description": "为你准备的惊喜，看到你开心的样子，一切都值得",
-      "date": "2023-08-15"
     },
     {
       "id": 4,
