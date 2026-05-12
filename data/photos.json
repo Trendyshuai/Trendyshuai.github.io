@@ -9,31 +9,38 @@
     },
     {
       "id": 2,
+      "src": "assets/images/photo10.jpg",
+      "title": "美玲宫",
+      "description": "南京因为有你，才变得有了特殊的意义。",
+      "date": "2023-11-25"
+    },
+    {
+      "id": 3,
       "src": "assets/images/photo8.jpg",
       "title": "我们一起经历的大雪",
       "description": "我们一起经历的沈阳大雪，虽然寒冷，但有你在身边，一切都变得温暖了",
       "date": "2024-01-30"
     },
     {
-      "id": 3,
+      "id": 4,
       "src": "assets/images/photo7.jpg",
       "title": "漫步星海湾的夜晚",
       "description": "海风轻拂，我们在星海湾的夜晚漫步，感受着彼此的温暖和这座城市的浪漫",
       "date": "2024-08-29"
     },
     {
-      "id": 4,
-      "src": "assets/images/photo4.jpg",
-      "title": "冬日暖阳",
-      "description": "冬天最温暖的事，就是和你一起晒太阳",
-      "date": "2023-12-25"
+      "id": 5,
+      "src": "assets/images/photo9.jpg",
+      "title": "新年愿望",
+      "description": "我们在杭州出租屋内，第一次一起跨年，虽然没有华丽的烟火，但有你在身边，就是最美的庆祝",
+      "date": "2025-01-01"
     },
     {
-      "id": 5,
-      "src": "assets/images/photo5.jpg",
-      "title": "新年愿望",
-      "description": "新的一年，希望能一直陪在你身边",
-      "date": "2024-01-01"
+      "id": 6,
+      "src": "assets/images/photo11.jpg",
+      "title": "女朋友要带回家",
+      "description": "女朋友要带回家给妈妈，虽然有点紧张，但更多的是期待和幸福，妈妈一定会喜欢你的",
+      "date": "2025-04-26"
     }
   ]
 }
