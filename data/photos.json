@@ -2,17 +2,17 @@
   "photos": [
     {
       "id": 1,
-      "src": "assets/images/photo1.jpg",
-      "title": "我们的第一次约会",
-      "description": "那天的阳光正好，你的笑容更甜",
-      "date": "2023-02-14"
+      "src": "assets/images/photo6.jpg",
+      "title": "骑车载你追日落",
+      "description": "那天的阳光正好，我骑车载你去追逐日落，感觉整个世界都变得温柔了",
+      "date": "2023-06-13"
     },
     {
       "id": 2,
-      "src": "assets/images/photo2.jpg",
-      "title": "海边漫步",
-      "description": "海风轻拂，手牵着手，时光静好",
-      "date": "2023-05-20"
+      "src": "assets/images/photo7.jpg",
+      "title": "漫步星海湾的夜晚",
+      "description": "海风轻拂，我们在星海湾的夜晚漫步，感受着彼此的温暖和这座城市的浪漫",
+      "date": "2024-08-29"
     },
     {
       "id": 3,
