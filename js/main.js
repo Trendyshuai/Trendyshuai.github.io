@@ -242,7 +242,7 @@ function renderArticles() {
         return;
     }
 
-    elements.articlesContainer.innerHTML = articles.map(article => `
+    elements.articlesContainer.innerHTML = articles.reverse().map(article => `
         <div class="article-card" data-id="${article.id}">
             <span class="article-date">${formatDate(article.date)}</span>
             <h3 class="article-title">${article.title}</h3>
@@ -292,6 +292,14 @@ function openArticleModal(articleId) {
 
     elements.modal.classList.add('active');
     document.body.style.overflow = 'hidden';
+
+    // 重置弹窗滚动位置到顶部（延迟确保DOM更新）
+    requestAnimationFrame(() => {
+        const modalContent = document.querySelector('.modal-content');
+        if (modalContent) {
+            modalContent.scrollTop = 0;
+        }
+    });
 }
 
 function closeModal() {
@@ -334,7 +342,7 @@ function showError(message) {
                 <div class="error-message" style="text-align: center; padding: 40px; color: #ff6b9d;">
                     <p>💕 ${message}</p>
                     <p style="font-size: 0.9rem; color: #7a7a7a; margin-top: 10px;">
-                        提示：请使用本地服务器运行此页面（如 VS Code Live Server）
+                        提示：请检查网络连接，确保数据文件存在，并刷新页面重试。
                     </p>
                 </div>
             `;
@@ -398,15 +406,28 @@ function initAPlayer() {
     const ap = new APlayer({
         container: container,
         fixed: true,
+        autoplay: true,
         lrcType: 3,
         listFolded: true,
         listMaxHeight: 90,
         audio: [{
+            name: '嫁给我 (民谣版）',
+            artist: '不可撤销乐队',
+            url: './assets/mp3/jgw.mp3',
+            cover: './assets/mp3/jgw.jpg',
+            lrc: './assets/mp3/jgw.lrc'
+        }, {
             name: '想见你想见你想见你',
             artist: '八三夭',
             url: './assets/mp3/xjn.mp3',
             cover: './assets/mp3/xjn.jpg',
             lrc: './assets/mp3/xjn.lrc'
+        }, {
+            name: '多远都要在一起',
+            artist: '邓紫棋',
+            url: './assets/mp3/dydyzyq.mp3',
+            cover: './assets/mp3/dydyzyq.jpg',
+            lrc: './assets/mp3/dydyzyq.lrc'
         }, {
             name: '晴天',
             artist: '周杰伦',
