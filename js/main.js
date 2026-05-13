@@ -403,10 +403,9 @@ function initAPlayer() {
         return;
     }
 
-    const ap = new APlayer({
+    window.ap = new APlayer({
         container: container,
         fixed: true,
-        autoplay: true,
         lrcType: 3,
         listFolded: true,
         listMaxHeight: 90,
@@ -448,4 +447,26 @@ function initAPlayer() {
             lrc: './assets/mp3/Love Story.lrc'
         }]
     });
+
+    initScrollAutoPlay();
+}
+
+
+// ==================== 点击触发自动播放 ====================
+function initScrollAutoPlay() {
+    // 监听欢迎按钮点击
+    const welcomeBtn = document.getElementById('welcomeBtn');
+    if (welcomeBtn) {
+        welcomeBtn.addEventListener('click', () => {
+            // 隐藏欢迎遮罩
+            const overlay = document.getElementById('welcomeOverlay');
+            if (overlay) {
+                overlay.classList.add('hidden');
+            }
+            // 播放音乐
+            if (window.ap) {
+                window.ap.play();
+            }
+        });
+    }
 }
