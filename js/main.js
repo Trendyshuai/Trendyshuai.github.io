@@ -200,7 +200,7 @@ function renderPhotoGrid() {
         return;
     }
 
-    elements.photoGrid.innerHTML = photos.map(photo => `
+    elements.photoGrid.innerHTML = photos.reverse().map(photo => `
         <div class="photo-card">
             <div class="photo-card-img-wrapper">
                 <img class="photo-card-img" src="${photo.src}" alt="${photo.title}"
@@ -410,7 +410,7 @@ function initAPlayer() {
         listFolded: true,
         listMaxHeight: 90,
         audio: [{
-            name: '嫁给我 (民谣版）',
+            name: '嫁给我(民谣版)',
             artist: '不可撤销乐队',
             url: './assets/mp3/jgw.mp3',
             cover: './assets/mp3/jgw.jpg',
