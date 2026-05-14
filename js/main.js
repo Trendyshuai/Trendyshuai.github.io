@@ -416,6 +416,12 @@ function initAPlayer() {
             cover: './assets/mp3/jgw.jpg',
             lrc: './assets/mp3/jgw.lrc'
         }, {
+            name: '米店',
+            artist: '张玮玮&郭龙',
+            url: './assets/mp3/md.mp3',
+            cover: './assets/mp3/md.jpg',
+            lrc: './assets/mp3/md.lrc'
+        }, {
             name: '想见你想见你想见你',
             artist: '八三夭',
             url: './assets/mp3/xjn.mp3',
@@ -427,12 +433,6 @@ function initAPlayer() {
             url: './assets/mp3/dydyzyq.mp3',
             cover: './assets/mp3/dydyzyq.jpg',
             lrc: './assets/mp3/dydyzyq.lrc'
-        }, {
-            name: '晴天',
-            artist: '周杰伦',
-            url: './assets/mp3/qt.mp3',
-            cover: './assets/mp3/qt.jpg',
-            lrc: './assets/mp3/qt.lrc'
         }, {
             name: '给你一瓶魔法药水',
             artist: '告五人',
