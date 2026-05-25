@@ -416,6 +416,12 @@ function initAPlayer() {
             cover: './assets/mp3/jgw.jpg',
             lrc: './assets/mp3/jgw.lrc'
         }, {
+            name: '海鸥',
+            artist: '逃跑计划',
+            url: './assets/mp3/ho.mp3',
+            cover: './assets/mp3/ho.jpg',
+            lrc: './assets/mp3/ho.lrc'
+        }, {
             name: '米店',
             artist: '张玮玮&郭龙',
             url: './assets/mp3/md.mp3',
