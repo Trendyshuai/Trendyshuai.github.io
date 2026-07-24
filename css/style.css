@@ -829,7 +829,7 @@ body {
     align-items: center;
     justify-content: center;
     z-index: 10000;
-    animation: fadeIn 0.5s ease;
+    /*animation: fadeIn 0.5s ease;*/
 }
 
 .welcome-overlay.hidden {
