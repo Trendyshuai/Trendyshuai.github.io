@@ -37,6 +37,8 @@ document.addEventListener('DOMContentLoaded', async () => {
         initAPlayer();
         renderAll();
         updateFooterDate();
+        // 欢迎遮罩显示时禁止滚动
+        document.body.style.overflow = 'hidden';
     } catch (error) {
         console.error('初始化失败:', error);
         showError('数据加载失败，请刷新页面重试');
@@ -469,6 +471,8 @@ function initScrollAutoPlay() {
             if (overlay) {
                 overlay.classList.add('hidden');
             }
+            // 恢复页面滚动
+            document.body.style.overflow = '';
             // 播放音乐
             if (window.ap) {
                 window.ap.play();
